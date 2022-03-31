@@ -7,6 +7,8 @@
      box-sizing: border-box;
  }
 
+
+
  *,
  *::before,
  *::after {
@@ -48,10 +50,6 @@
      box-shadow: 0 7px #00ff66;
  }
 
- /* .equal-sign {
-     height: 98%;
-     grid-area: 2 / 4 / 6 / 5;
- } */
 
  .calculator-keys {
      display: grid;
@@ -76,4 +74,8 @@
  .list {
      padding-left: 5%;
      font-size: 150%;
+ }
+
+ .close {
+     box-shadow: none;
  }

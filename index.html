@@ -22,73 +22,87 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row gx-5">
-            <div class="col-4" style="margin-top: 4%; padding-left: 2%;">
-                <div class="card">
-                    <div class="card-body">
-                        <h1 class="h1"> Perhatian !</h1>
-                        <h3>Beberapa Tombol Yang Tidak Diberikan Fungsi :</h3>
-                        <ul class="list">
-                            <li>M+</li>
-                            <li>M-</li>
-                            <li>M+</li>
-                            <li>+/_</li>
-                            <li>%</li>
-                            <li><i class="fa-solid fa-arrow-right-long"></i></li>
-                        </ul>
-                        <h4>Ditampilkan Hanya Untuk Mengisi Tombol Selayaknya Kalkulator. </h4>
-                    </div>
+
+    <div class="text-center mt-3">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal"
+            style="box-shadow: none; position: relative; width: 20%;">Notice</button></div>
+
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="h1"> Perhatian !</h1>
+                    <h3>Beberapa Tombol Yang Tidak Diberikan Fungsi :</h3>
+                    <ul class="list">
+                        <li>M+</li>
+                        <li>M-</li>
+                        <li>M+</li>
+                        <li>+/_</li>
+                        <li>%</li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i></li>
+                    </ul>
+                    <h4>Ditampilkan Hanya Untuk Mengisi Tombol Selayaknya Kalkulator. </h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close" data-dismiss="modal">Close</button>
                 </div>
             </div>
 
-
-            <div class="col-8" style="margin-top: 20%;">
-                <div class="calculator card">
-                    <input type="text" class="calculator-screen z-depth-1" value="" disabled />
-                    <div class="calculator-keys">
-
-                        <button type="button" value=" " class="btn btn-light waves-effect">M=</button>
-                        <button type="button" value=" " class="btn btn-light waves-effect">M-</button>
-                        <button type="button" value=" " class="btn btn-light waves-effect">M+</button>
-                        <button type="button" value=" " class="btn btn-light waves-effect">+/_</button>
-                        <button type="button" value=" " class="btn btn-danger waves-effect"> <i
-                                class="fa-solid fa-power-off"></i></button>
-
-
-                        <button type="button" value="7" class="btn btn-light waves-effect">7</button>
-                        <button type="button" value="8" class="btn btn-light waves-effect">8</button>
-                        <button type="button" value="9" class="btn btn-light waves-effect">9</button>
-                        <button type="button" value=" " class="btn btn-light waves-effect">%</button>
-                        <button type="button" value=" " class="btn btn-info waves-effect"><i
-                                class="fa-solid fa-arrow-right-long"></i></button>
-
-
-                        <button type="button" value="4" class="btn btn-light waves-effect">4</button>
-                        <button type="button" value="5" class="btn btn-light waves-effect">5</button>
-                        <button type="button" value="6" class="btn btn-light waves-effect">6</button>
-                        <button type="button" class="operator btn btn-info" value="-">-</button>
-                        <button type="button" class="operator btn btn-info" value="/">&divide;</button>
-
-
-                        <button type="button" value="1" class="btn btn-light waves-effect">1</button>
-                        <button type="button" value="2" class="btn btn-light waves-effect">2</button>
-                        <button type="button" value="3" class="btn btn-light waves-effect">3</button>
-                        <button type="button" class="operator btn btn-info" value="*">&times;</button>
-                        <button type="button" class="all-clear function btn btn-danger btn-sm"
-                            value="all-clear">Clear</button>
-
-
-                        <button type="button" value="0" class="btn btn-light waves-effect">0</button>
-                        <button type="button" value="00" class="btn btn-light waves-effect">00</button>
-                        <button type="button" class="decimal function btn btn-light" value=".">.</button>
-                        <button type="button" class="operator btn btn-info" value="+">+</button>
-                        <button type="button" class="equal-sign operator btn btn-info" value="=">=</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
+
+    <!-- <div class="col-8" style="margin-top: 20%;"> -->
+    <div class="calculator card">
+        <input type="text" class="calculator-screen z-depth-1" value="" disabled />
+        <div class="calculator-keys">
+
+            <button type="button" value=" " class="btn btn-light waves-effect">M=</button>
+            <button type="button" value=" " class="btn btn-light waves-effect">M-</button>
+            <button type="button" value=" " class="btn btn-light waves-effect">M+</button>
+            <button type="button" value=" " class="btn btn-light waves-effect">+/_</button>
+            <button type="button" value=" " class="btn btn-danger waves-effect"> <i
+                    class="fa-solid fa-power-off"></i></button>
+
+
+            <button type="button" value="7" class="btn btn-light waves-effect">7</button>
+            <button type="button" value="8" class="btn btn-light waves-effect">8</button>
+            <button type="button" value="9" class="btn btn-light waves-effect">9</button>
+            <button type="button" value=" " class="btn btn-light waves-effect">%</button>
+            <button type="button" value=" " class="btn btn-info waves-effect"><i
+                    class="fa-solid fa-arrow-right-long"></i></button>
+
+
+            <button type="button" value="4" class="btn btn-light waves-effect">4</button>
+            <button type="button" value="5" class="btn btn-light waves-effect">5</button>
+            <button type="button" value="6" class="btn btn-light waves-effect">6</button>
+            <button type="button" class="operator btn btn-info" value="-">-</button>
+            <button type="button" class="operator btn btn-info" value="/">&divide;</button>
+
+
+            <button type="button" value="1" class="btn btn-light waves-effect">1</button>
+            <button type="button" value="2" class="btn btn-light waves-effect">2</button>
+            <button type="button" value="3" class="btn btn-light waves-effect">3</button>
+            <button type="button" class="operator btn btn-info" value="*">&times;</button>
+            <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear">Clear</button>
+
+
+            <button type="button" value="0" class="btn btn-light waves-effect">0</button>
+            <button type="button" value="00" class="btn btn-light waves-effect">00</button>
+            <button type="button" class="decimal function btn btn-light" value=".">.</button>
+            <button type="button" class="operator btn btn-info" value="+">+</button>
+            <button type="button" class="equal-sign operator btn btn-info" value="=">=</button>
+        </div>
+    </div>
+    </div>
+    <!-- </div>
+    </div> -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
